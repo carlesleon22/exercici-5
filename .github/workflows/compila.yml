@@ -1,10 +1,10 @@
 name: Monedes
-  on:
-   push:
+on:
+  push:
        branches: [ test ]
 
-   jobs:
-        compile-test-linux:
+ jobs:
+       compile-test-linux:
          runs-on: ubuntu-latest
           steps:
             - name: Compilaa amb makee 
