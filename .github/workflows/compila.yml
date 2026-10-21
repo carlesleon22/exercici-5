@@ -1,0 +1,24 @@
+name: Monedes
+  on:
+    push:
+  branches: [ main ]
+      jobs:
+        compile-test-linux:
+         runs-on: ubuntu-latest
+          steps:
+            - name: Compilaa amb makee 
+              uses: make
+            - name: Comproabr binari
+              uses: ./conversor c2f 100.
+            - name: Checkout del repo
+              run: actions/checkout@v6
+        compile-test-mac:
+         runs-on: macos-latest
+          steps:
+            - name: Compilaa amb make
+              uses: make
+            - name: Comprobar binari
+              uses: ./conversor c2f 100.
+            - name: Checkout del repo
+              run: actions/checkout@v6
+
