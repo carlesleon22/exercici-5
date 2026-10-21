@@ -1,6 +1,6 @@
-name: Monedes
-on:
-  push:
+name: exercici
+     on:
+      push:
        branches: [ test ]
 
      jobs:
