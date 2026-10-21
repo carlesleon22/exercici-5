@@ -1,8 +1,9 @@
 name: Monedes
   on:
-    push:
-  branches: [ main ]
-      jobs:
+   push:
+       branches: [ test ]
+
+   jobs:
         compile-test-linux:
          runs-on: ubuntu-latest
           steps:
